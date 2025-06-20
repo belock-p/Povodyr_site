@@ -16,7 +16,7 @@ const ImageShowcaseSection = () => {
         <div className="rounded-2xl sm:rounded-3xl overflow-hidden shadow-elegant mx-auto max-w-4xl animate-on-scroll">
           <div className="w-full">
             <img 
-              src="/hero-image.jpg" 
+              src="/Povodyr_site/hero-image.jpg" 
               alt="Advanced humanoid robot with orange and white design" 
               className="w-full h-auto object-cover"
             />
