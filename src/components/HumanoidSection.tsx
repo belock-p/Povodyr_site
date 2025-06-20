@@ -118,7 +118,7 @@ const HumanoidSection = () => {
               <div
                 className="absolute inset-0 z-0 bg-gradient-to-b from-pulse-900/40 to-dark-900/80"
                 style={{
-                  backgroundImage: "url('/background-section1.png')",
+                  backgroundImage: "url('/Povodyr_site/background-section1.png')",
                   backgroundSize: "cover",
                   backgroundPosition: "top center",
                   backgroundBlendMode: "overlay"
