@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from "react";
 import { cn } from "@/lib/utils";
 import { Menu, X } from "lucide-react";
@@ -71,10 +70,10 @@ const Navbar = () => {
               scrollToTop();
             }}
           >
-            Home
+            Головна
           </a>
-          <a href="#features" className="nav-link">About</a>
-          <a href="#details" className="nav-link">Contact</a>
+          <a href="#features" className="nav-link">Про застосунок</a>
+          <a href="#details" className="nav-link">Контакти</a>
         </nav>
 
         {/* Mobile menu button - increased touch target */}
@@ -103,7 +102,7 @@ const Navbar = () => {
               document.body.style.overflow = '';
             }}
           >
-            Home
+            Головна
           </a>
           <a 
             href="#features" 
@@ -113,7 +112,7 @@ const Navbar = () => {
               document.body.style.overflow = '';
             }}
           >
-            About
+            Про застосунок
           </a>
           <a 
             href="#details" 
@@ -123,7 +122,7 @@ const Navbar = () => {
               document.body.style.overflow = '';
             }}
           >
-            Contact
+            Контакти
           </a>
         </nav>
       </div>
