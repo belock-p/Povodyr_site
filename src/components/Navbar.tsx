@@ -56,7 +56,7 @@ const Navbar = () => {
           <img 
             src="/Povodyr_site/logo.svg" 
             alt="Pulse Robot Logo" 
-            className="h-7 sm:h-8" 
+            className="h-[2.6rem] sm:h-[2.6rem]" 
           />
         </a>
 
