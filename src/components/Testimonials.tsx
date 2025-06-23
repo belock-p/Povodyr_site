@@ -9,27 +9,27 @@ interface TestimonialProps {
 }
 
 const testimonials: TestimonialProps[] = [{
-  content: "Відгуки користувачів будуть доступні після запуску застосунку.",
-  author: "HoRiseOn",
-  role: "Команда розробників",
+  content: "Не вистачає чогось, що допоможе зорієнтуватися і почуватися впевнено, без постійної залежності від інших",
+  author: "Оксана",
+  role: "втрата зору після поранення",
   gradient: "from-blue-700 via-indigo-800 to-purple-900",
   backgroundImage: "/Povodyr_site/background-section1.png"
 }, {
-  content: "Implementing Atlas in our fulfillment centers reduced workplace injuries by 40% while improving order accuracy. The learning capabilities are remarkable.",
-  author: "Michael Rodriguez",
-  role: "Director of Logistics, GlobalShip",
+  content: "Мені потрібен інструмент, який працює тут і зараз, без зайвих кроків і англійських меню.",
+  author: "Сергій",
+  role: "тотальна втрата зору",
   gradient: "from-indigo-900 via-purple-800 to-orange-500",
   backgroundImage: "/Povodyr_site/background-section2.png"
 }, {
-  content: "Atlas adapted to our lab protocols faster than any system we've used. It's like having another researcher who never gets tired and maintains perfect precision.",
-  author: "Dr. Amara Patel",
-  role: "Lead Scientist, BioAdvance Research",
+  content: "Не хочу бути тягарем — хочу бути самостійною.",
+  author: "Аліна",
+  role: "часткова втрата зору",
   gradient: "from-purple-800 via-pink-700 to-red-500",
   backgroundImage: "/Povodyr_site/background-section3.png"
 }, {
-  content: "As a mid-size business, we never thought advanced robotics would be accessible to us. Atlas changed that equation entirely with its versatility and ease of deployment.",
-  author: "Jason Lee",
-  role: "CEO, Innovative Solutions Inc.",
+  content: "Було б добре мати голосового помічника, який може підказати, що переді мною — швидко, просто, без складних дій.",
+  author: "Михайло",
+  role: "без зору із народження",
   gradient: "from-orange-600 via-red-500 to-purple-600",
   backgroundImage: "/Povodyr_site/background-section1.png"
 }];
@@ -63,7 +63,7 @@ const Testimonials = () => {
         <div className="flex items-center gap-4 mb-6">
           <div className="pulse-chip">
             <span className="inline-flex items-center justify-center w-5 h-5 rounded-full bg-pulse-500 text-white mr-2">04</span>
-            <span>Testimonials</span>
+            <span>Відгуки</span>
           </div>
         </div>
         
