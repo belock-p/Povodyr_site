@@ -69,7 +69,7 @@ const DetailsSection = () => {
                   </div>
                   <div className="flex-1">
                     <div className="p-3 rounded-lg bg-gray-50/80 backdrop-blur-sm border border-gray-100">
-                      <span className="font-semibold text-base">Висота:</span> —
+                      <span className="font-semibold text-base">Доступність:</span> працює навіть без інтернету
                     </div>
                   </div>
                 </div>
@@ -82,7 +82,7 @@ const DetailsSection = () => {
                   </div>
                   <div className="flex-1">
                     <div className="p-3 rounded-lg bg-gray-50/80 backdrop-blur-sm border border-gray-100">
-                      <span className="font-semibold text-base">Можливості:</span> —
+                      <span className="font-semibold text-base">Гнучкість:</span> адаптується до рівня зору та потреб користувача
                     </div>
                   </div>
                 </div>
@@ -95,7 +95,7 @@ const DetailsSection = () => {
                   </div>
                   <div className="flex-1">
                     <div className="p-3 rounded-lg bg-gray-50/80 backdrop-blur-sm border border-gray-100">
-                      <span className="font-semibold text-base">Вага:</span> —
+                      <span className="font-semibold text-base">Швидкість:</span> миттєве розпізнавання та голосова підтримка
                     </div>
                   </div>
                 </div>
@@ -108,7 +108,7 @@ const DetailsSection = () => {
                   </div>
                   <div className="flex-1">
                     <div className="p-3 rounded-lg bg-gray-50/80 backdrop-blur-sm border border-gray-100">
-                      <span className="font-semibold text-base">Час роботи:</span> —
+                      <span className="font-semibold text-base">Надійність:</span> не потребує складного налаштування
                     </div>
                   </div>
                 </div>
@@ -121,7 +121,7 @@ const DetailsSection = () => {
                   </div>
                   <div className="flex-1">
                     <div className="p-3 rounded-lg bg-gray-50/80 backdrop-blur-sm border border-gray-100">
-                      <span className="font-semibold text-base">Рухливість:</span> —
+                      <span className="font-semibold text-base">Свобода:</span> допомагає бути незалежним у повсякденному житті
                     </div>
                   </div>
                 </div>
