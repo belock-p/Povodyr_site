@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { toast } from "sonner";
 const DetailsSection = () => {
   const [formData, setFormData] = useState({
     fullName: "",
@@ -7,10 +6,7 @@ const DetailsSection = () => {
     company: ""
   });
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const {
-      name,
-      value
-    } = e.target;
+    const { name, value } = e.target;
     setFormData(prev => ({
       ...prev,
       [name]: value
