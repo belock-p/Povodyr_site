@@ -13,32 +13,32 @@ const testimonials: TestimonialProps[] = [{
   author: "Оксана",
   role: "втрата зору після поранення",
   gradient: "from-blue-700 via-indigo-800 to-purple-900",
-  backgroundImage: "/Povodyr_site/background-section1.png"
+  backgroundImage: "/Providnyk_site/background-section1.png"
 }, {
   content: "Мені потрібен інструмент, який працює тут і зараз, без зайвих кроків і англійських меню.",
   author: "Сергій",
   role: "тотальна втрата зору",
   gradient: "from-indigo-900 via-purple-800 to-orange-500",
-  backgroundImage: "/Povodyr_site/background-section2.png"
+  backgroundImage: "/Providnyk_site/background-section2.png"
 }, {
   content: "Не хочу бути тягарем — хочу бути самостійною.",
   author: "Аліна",
   role: "часткова втрата зору",
   gradient: "from-purple-800 via-pink-700 to-red-500",
-  backgroundImage: "/Povodyr_site/background-section3.png"
+  backgroundImage: "/Providnyk_site/background-section3.png"
 }, {
   content: "Було б добре мати голосового помічника, який може підказати, що переді мною — швидко, просто, без складних дій.",
   author: "Михайло",
   role: "без зору із народження",
   gradient: "from-orange-600 via-red-500 to-purple-600",
-  backgroundImage: "/Povodyr_site/background-section1.png"
+  backgroundImage: "/Providnyk_site/background-section1.png"
 }];
 
 const TestimonialCard = ({
   content,
   author,
   role,
-  backgroundImage = "/Povodyr_site/background-section1.png"
+  backgroundImage = "/Providnyk_site/background-section1.png"
 }: TestimonialProps) => {
   return <div className="bg-cover bg-center rounded-lg p-8 h-full flex flex-col justify-between text-white transform transition-transform duration-300 hover:-translate-y-2 relative overflow-hidden" style={{
     backgroundImage: `url('${backgroundImage}')`
