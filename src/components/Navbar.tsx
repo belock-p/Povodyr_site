@@ -54,8 +54,8 @@ const Navbar = () => {
           aria-label="Pulse Robot"
         >
           <img 
-            src="/Povodyr_site/logo.svg" 
-            alt="Pulse Robot Logo" 
+            src="/Providnyk_site/logo.svg" 
+            alt="Providnyk Logo" 
             className="h-[2.6rem] sm:h-[2.6rem]" 
           />
         </a>
