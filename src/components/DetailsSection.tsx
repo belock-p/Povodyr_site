@@ -35,8 +35,7 @@ const DetailsSection = () => {
       company: ""
     });
     
-      const TELEGRAM_TOKEN = "7724608200:AAGXoUPrYwVW95-z2VTaEXUexfKuloXhbxE";
-      const CHAT_ID = "-1002665199535";
+
     
       const message = `
     🔔 Нова заявка з сайту:
