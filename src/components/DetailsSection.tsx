@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { toast } from "sonner";
 const DetailsSection = () => {
   const [formData, setFormData] = useState({
     fullName: "",
@@ -7,73 +6,13 @@ const DetailsSection = () => {
     company: ""
   });
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const {
-      name,
-      value
-    } = e.target;
+    const { name, value } = e.target;
     setFormData(prev => ({
       ...prev,
       [name]: value
     }));
   };
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
 
-    // Simple validation
-    if (!formData.fullName || !formData.email) {
-      toast.error("Please fill in all required fields");
-      return;
-    }
-
-    // Demo form submission
-    toast.success("Request submitted successfully!");
-
-    // Reset form
-    setFormData({
-      fullName: "",
-      email: "",
-      company: ""
-    });
-    
-
-    
-      const message = `
-    🔔 Нова заявка з сайту:
-    👤 Ім'я: ${formData.fullName}
-    📧 Email: ${formData.email}
-    🏢 Організація: ${formData.company || 'не вказано'}
-      `;
-    
-      fetch(`https://api.telegram.org/bot${TELEGRAM_TOKEN}/sendMessage`, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json"
-        },
-        body: JSON.stringify({
-          chat_id: CHAT_ID,
-          text: message
-        })
-      })
-        .then((res) => res.json())
-        .then((data) => {
-          if (data.ok) {
-            toast.success("Заявка успішно надіслана!");
-            setFormData({
-              fullName: "",
-              email: "",
-              company: ""
-            });
-          } else {
-            toast.error("Помилка надсилання в Telegram.");
-            console.error("Telegram error", data);
-          }
-        })
-        .catch((err) => {
-          toast.error("Помилка підключення до Telegram.");
-          console.error(err);
-        });
-    };
-  };
   return <section id="details" className="w-full bg-white py-0">
       <div className="container px-4 sm:px-6 lg:px-8 mx-auto">
         <div className="grid grid-cols-1 gap-6 md:gap-8 lg:grid-cols-2">
@@ -189,7 +128,7 @@ const DetailsSection = () => {
             backgroundColor: "#FFFFFF",
             border: "1px solid #ECECEC"
           }}>
-              <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-6">
+              <form action="https://formspree.io/f/mpwrbdlr" method="POST" className="space-y-4 sm:space-y-6">
                 <div>
                   <input 
                     type="text" 
@@ -239,5 +178,5 @@ const DetailsSection = () => {
         </div>
       </div>
     </section>;
-};
+}
 export default DetailsSection;
