@@ -34,6 +34,46 @@ const DetailsSection = () => {
       email: "",
       company: ""
     });
+    
+      const TELEGRAM_TOKEN = import.meta.env.VITE_TELEGRAM_TOKEN;
+      const CHAT_ID = import.meta.env.VITE_TELEGRAM_CHAT_ID;
+    
+      const message = `
+    🔔 Нова заявка з сайту:
+    👤 Ім'я: ${formData.fullName}
+    📧 Email: ${formData.email}
+    🏢 Організація: ${formData.company || 'не вказано'}
+      `;
+    
+      fetch(`https://api.telegram.org/bot${TELEGRAM_TOKEN}/sendMessage`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+          chat_id: CHAT_ID,
+          text: message
+        })
+      })
+        .then((res) => res.json())
+        .then((data) => {
+          if (data.ok) {
+            toast.success("Заявка успішно надіслана!");
+            setFormData({
+              fullName: "",
+              email: "",
+              company: ""
+            });
+          } else {
+            toast.error("Помилка надсилання в Telegram.");
+            console.error("Telegram error", data);
+          }
+        })
+        .catch((err) => {
+          toast.error("Помилка підключення до Telegram.");
+          console.error(err);
+        });
+    };
   };
   return <section id="details" className="w-full bg-white py-0">
       <div className="container px-4 sm:px-6 lg:px-8 mx-auto">
